@@ -1,4 +1,5 @@
 import java.util.PriorityQueue
+import kotlin.math.max
 
 class AdvancedArrayTechniques {
 
@@ -43,7 +44,7 @@ class AdvancedArrayTechniques {
         for (i in board.indices) {
             for (j in board[0].indices) {
                 val char = board[i][j]
-                if(board[i][j]=='.'){
+                if (board[i][j] == '.') {
                     continue
                 }
                 val subBoxIndex = (i / 3 * 3) + j / 3
@@ -56,6 +57,26 @@ class AdvancedArrayTechniques {
             }
         }
         return true
+    }
+
+    fun longestConsecutive(nums: IntArray): Int {
+        val set = mutableSetOf<Int>()
+        for (num in nums) {
+            set.add(num)
+        }
+        var maxConsecutive = 0
+        for (num in nums) {
+            if (!set.contains(num - 1)) {
+                var count = 1
+                var curr = num
+                while (set.contains(curr + 1)) {
+                    count++
+                    curr++
+                }
+                maxConsecutive = max(maxConsecutive, count)
+            }
+        }
+        return maxConsecutive
     }
 
 }
