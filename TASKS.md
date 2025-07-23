@@ -292,6 +292,203 @@ Master Data Structures and Algorithms through pattern recognition on LeetCode pr
 
 ---
 
+---
+
+## 17. Elements of Programming Interviews (EPI) Problems
+
+### 17.1 Primitive Types
+#### 17.1.1 Compute the parity of a word - https://leetcode.com/problems/number-of-1-bits/ (Similar)
+#### 17.1.2 Swap bits - https://leetcode.com/problems/reverse-bits/ (Similar)
+#### 17.1.3 Reverse bits - https://leetcode.com/problems/reverse-bits/
+#### 17.1.4 Find a closest integer with the same weight - https://leetcode.com/problems/next-greater-element-iii/ (Similar concept of finding next permutation with same number of set bits)
+#### 17.1.5 Compute x x y without arithmetical operators - https://leetcode.com/problems/multiply-strings/ (Similar, but for strings)
+#### 17.1.6 Compute x/y - https://leetcode.com/problems/divide-two-integers/ (Similar, but without arithmetic operators)
+#### 17.1.7 Compute x^y - https://leetcode.com/problems/powx-n/
+#### 17.1.8 Reverse digits - https://leetcode.com/problems/reverse-integer/
+#### 17.1.9 Check if a decimal integer is a palindrome - https://leetcode.com/problems/palindrome-number/
+#### 17.1.10 Generate uniform random numbers - https://leetcode.com/problems/implement-rand10-using-rand7/ (Similar)
+#### 17.1.11 Rectangle intersection - https://leetcode.com/problems/rectangle-overlap/ (Similar)
+
+### 17.2 Arrays
+#### 17.2.1 The Dutch national flag problem - https://leetcode.com/problems/sort-colors/ (Similar)
+#### 17.2.2 Increment an arbitrary-precision integer - https://leetcode.com/problems/plus-one/
+#### 17.2.3 Multiply two arbitrary-precision integers - https://leetcode.com/problems/multiply-strings/
+#### 17.2.4 Advancing through an array - https://leetcode.com/problems/jump-game/ (Similar)
+#### 17.2.5 Delete duplicates from a sorted array - https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+#### 17.2.6 Buy and sell a stock once - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+#### 17.2.7 Buy and sell a stock twice - https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+#### 17.2.8 Enumerate all primes to n - https://leetcode.com/problems/count-primes/ (Similar)
+#### 17.2.9 Permute the elements of an array - https://leetcode.com/problems/next-permutation/ (Similar, general permutation)
+#### 17.2.10 Compute the next permutation - https://leetcode.com/problems/next-permutation/
+#### 17.2.11 Sample offline data - https://leetcode.com/problems/shuffle-an-array/ (Similar)
+#### 17.2.12 Sample online data - https://leetcode.com/problems/linked-list-random-node/ (Similar, reservoir sampling)
+#### 17.2.13 Compute a random permutation - https://leetcode.com/problems/shuffle-an-array/ (Similar)
+#### 17.2.14 Compute a random subset - https://leetcode.com/problems/random-pick-index/ (Similar)
+#### 17.2.15 Generate nonuniform random numbers - https://leetcode.com/problems/random-pick-with-weight/ (Similar)
+#### 17.2.16 The Sudoku checker problem - https://leetcode.com/problems/valid-sudoku/
+#### 17.2.17 Compute the spiral ordering of a 2D array - https://leetcode.com/problems/spiral-matrix/
+#### 17.2.18 Rotate a 2D array - https://leetcode.com/problems/rotate-image/
+#### 17.2.19 Compute rows in Pascal's Triangle - https://leetcode.com/problems/pascals-triangle/
+
+### 17.3 Strings
+#### 17.3.1 Interconvert strings and integers - https://leetcode.com/problems/string-to-integer-atoi/ (Similar)
+#### 17.3.2 Base conversion - https://leetcode.com/problems/base-7/ (Similar)
+#### 17.3.3 Compute the spreadsheet column encoding - https://leetcode.com/problems/excel-sheet-column-number/ (Similar)
+#### 17.3.4 Replace and remove - https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/ (Similar)
+#### 17.3.5 Test palindromicity - https://leetcode.com/problems/valid-palindrome/
+#### 17.3.6 Reverse all the words in a sentence - https://leetcode.com/problems/reverse-words-in-a-string/
+#### 17.3.7 Compute all mnemonics for a phone number - https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+#### 17.3.8 The look-and-say problem - https://leetcode.com/problems/count-and-say/
+#### 17.3.9 Convert from Roman to decimal - https://leetcode.com/problems/roman-to-integer/
+#### 17.3.10 Compute all valid IP addresses - https://leetcode.com/problems/restore-ip-addresses/
+#### 17.3.11 Write a string sinusoidally - No direct LeetCode equivalent found.
+#### 17.3.12 Implement run-length encoding - https://leetcode.com/problems/string-compression/ (Similar)
+#### 17.3.13 Find the first occurrence of a substring - https://leetcode.com/problems/implement-strstr/
+
+### 17.4 Linked Lists
+#### 17.4.1 Merge two sorted lists - https://leetcode.com/problems/merge-two-sorted-lists/
+#### 17.4.2 Reverse a single sublist - https://leetcode.com/problems/reverse-linked-list-ii/ (Similar)
+#### 17.4.3 Test for cyclicity - https://leetcode.com/problems/linked-list-cycle/
+#### 17.4.4 Test for overlapping lists—lists are cycle-free - https://leetcode.com/problems/intersection-of-two-linked-lists/
+#### 17.4.5 Test for overlapping lists—lists may have cycles - https://leetcode.com/problems/intersection-of-two-linked-lists-ii/ (Similar, requires cycle detection)
+#### 17.4.6 Delete a node from a singly linked list - https://leetcode.com/problems/delete-node-in-a-linked-list/
+#### 17.4.7 Remove the kth last element from a list - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+#### 17.4.8 Remove duplicates from a sorted list - https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+#### 17.4.9 Implement cyclic right shift for singly linked lists - https://leetcode.com/problems/rotate-list/ (Similar)
+#### 17.4.10 Implement even-odd merge - No direct LeetCode equivalent found.
+#### 17.4.11 Test whether a singly linked list is palindromic - https://leetcode.com/problems/palindrome-linked-list/
+#### 17.4.12 Implement list pivoting - https://leetcode.com/problems/partition-list/ (Similar)
+#### 17.4.13 Add list-based integers - https://leetcode.com/problems/add-two-numbers/
+
+### 17.5 Stacks and Queues
+#### 17.5.1 Implement a stack with max API - https://leetcode.com/problems/min-stack/ (Similar)
+#### 17.5.2 Evaluate RPN expressions - https://leetcode.com/problems/evaluate-reverse-polish-notation/
+#### 17.5.3 Test a string over "{,},(,),[, ]" for well-formedness - https://leetcode.com/problems/valid-parentheses/
+#### 17.5.4 Normalize pathnames - No direct LeetCode equivalent found.
+#### 17.5.5 Search a postings list - No direct LeetCode equivalent found.
+#### 17.5.6 Compute buildings with a sunset view - https://leetcode.com/problems/buildings-with-an-ocean-view/ (Similar)
+#### 17.5.7 Implement a circular queue - No direct LeetCode equivalent found.
+#### 17.5.8 Implement a queue using stacks - https://leetcode.com/problems/implement-queue-using-stacks/
+#### 17.5.9 Implement a queue with max API - https://leetcode.com/problems/sliding-window-maximum/ (Similar, using deque)
+#### 17.5.10 Compute binary tree nodes in order of increasing depth - https://leetcode.com/problems/binary-tree-level-order-traversal/ (Similar)
+
+### 17.6 Binary Trees
+#### 17.6.1 Test if a binary tree is height-balanced - https://leetcode.com/problems/balanced-binary-tree/
+#### 17.6.2 Test if a binary tree is symmetric - https://leetcode.com/problems/symmetric-tree/
+#### 17.6.3 Compute the lowest common ancestor in a binary tree - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+#### 17.6.4 Compute the LCA when nodes have parent pointers - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ (Variant)
+#### 17.6.5 Sum the root-to-leaf paths in a binary tree - https://leetcode.com/problems/sum-root-to-leaf-numbers/ (Similar)
+#### 17.6.6 Find a root to leaf path with specified sum - https://leetcode.com/problems/path-sum/
+#### 17.6.7 Implement an inorder traversal without recursion - https://leetcode.com/problems/binary-tree-inorder-traversal/ (Iterative approach)
+#### 17.6.8 Implement a preorder traversal without recursion - https://leetcode.com/problems/binary-tree-preorder-traversal/ (Iterative approach)
+#### 17.6.9 Compute the kth node in an inorder traversal - https://leetcode.com/problems/kth-smallest-element-in-a-bst/ (Similar)
+#### 17.6.10 Compute the successor - https://leetcode.com/problems/inorder-successor-in-bst/ (Similar)
+#### 17.6.11 Implement an inorder traversal with O(1) space - No direct LeetCode equivalent found.
+#### 17.6.12 Reconstruct a binary tree from traversal data - https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+#### 17.6.13 Reconstruct a binary tree from a preorder traversal with markers - https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/ (Variant)
+#### 17.6.14 Form a linked list from the leaves of a binary tree - No direct LeetCode equivalent found.
+#### 17.6.15 Compute the exterior of a binary tree - No direct LeetCode equivalent found.
+#### 17.6.16 Compute the right sibling tree - https://leetcode.com/problems/populating-next-right-pointers-in-each-node/ (Similar)
+#### 17.6.17 Implement locking in a binary tree - No direct LeetCode equivalent found.
+
+### 17.7 Heaps
+#### 17.7.1 Merge sorted files - https://leetcode.com/problems/merge-k-sorted-lists/ (Similar, for lists)
+#### 17.7.2 Sort an increasing-decreasing array - No direct LeetCode equivalent found.
+#### 17.7.3 Sort an almost-sorted array - No direct LeetCode equivalent found.
+#### 17.7.4 Compute the k closest stars - https://leetcode.com/problems/k-closest-points-to-origin/
+#### 17.7.5 Compute the median of online data - https://leetcode.com/problems/find-median-from-data-stream/
+#### 17.7.6 Compute the k largest elements in a max-heap - https://leetcode.com/problems/kth-largest-element-in-an-array/
+#### 17.7.7 Implement a stack API using a heap - https://leetcode.com/problems/min-stack/ (Similar, but with heap)
+
+### 17.8 Searching
+#### 17.8.1 Search a sorted array for first occurrence of k - https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ (Similar)
+#### 17.8.2 Search a cyclically sorted array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+#### 17.8.3 Compute the integer square root - https://leetcode.com/problems/sqrtx/
+#### 17.8.4 Compute the real square root - https://leetcode.com/problems/sqrtx/ (Variant for doubles)
+#### 17.8.5 Search in a 2D sorted array - https://leetcode.com/problems/search-a-2d-matrix/
+#### 17.8.6 Find the min and max simultaneously - https://leetcode.com/problems/find-minimum-and-maximum-element-in-array/ (Similar)
+#### 17.8.7 Find the kth largest element - https://leetcode.com/problems/kth-largest-element-in-an-array/
+#### 17.8.8 Find the missing IP address - https://leetcode.com/problems/missing-number/ (Similar, but for IP addresses)
+#### 17.8.9 Find the duplicate and missing elements - https://leetcode.com/problems/find-the-duplicate-number/ (Similar, but also finding missing)
+
+### 17.9 Hash Tables
+#### 17.9.1 Test for palindromic permutations - https://leetcode.com/problems/palindrome-permutation/ (Similar)
+#### 17.9.2 Is an anonymous letter constructible? - https://leetcode.com/problems/ransom-note/ (Similar)
+#### 17.9.3 Implement an ISBN cache - https://leetcode.com/problems/lru-cache/ (Similar, LRU Cache)
+#### 17.9.4 Compute the LCA, optimizing for close ancestors - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ (Similar, optimized LCA)
+#### 17.9.5 Compute the k most frequent queries - https://leetcode.com/problems/top-k-frequent-elements/
+#### 17.9.6 Find the nearest repeated entries in an array - https://leetcode.com/problems/shortest-distance-to-a-character/ (Similar, but for nearest repeated word)
+#### 17.9.7 Find the smallest subarray covering all values - https://leetcode.com/problems/minimum-window-substring/ (Similar)
+#### 17.9.8 Find smallest subarray sequentially covering all values - https://leetcode.com/problems/minimum-window-substring/ (Similar, sequential)
+#### 17.9.9 Find the longest subarray with distinct entries - https://leetcode.com/problems/longest-substring-without-repeating-characters/
+#### 17.9.10 Find the length of a longest contained interval - https://leetcode.com/problems/longest-consecutive-sequence/
+#### 17.9.11 Compute the average of the top three scores - No direct LeetCode equivalent found.
+#### 17.9.12 Compute all string decompositions - https://leetcode.com/problems/substring-with-concatenation-of-all-words/ (Similar)
+#### 17.9.13 Test the Collatz conjecture - No direct LeetCode equivalent found.
+#### 17.9.14 Implement a hash function for chess - No direct LeetCode equivalent found.
+
+### 17.10 Sorting
+#### 17.10.1 Compute the intersection of two sorted arrays - https://leetcode.com/problems/intersection-of-two-arrays-ii/ (Similar)
+#### 17.10.2 Merge two sorted arrays - https://leetcode.com/problems/merge-sorted-array/
+#### 17.10.3 Remove first-name duplicates - https://leetcode.com/problems/remove-duplicates-from-sorted-array/ (Similar)
+#### 17.10.4 Render a calendar - https://leetcode.com/problems/meeting-rooms-ii/ (Similar, but for maximum concurrent events)
+#### 17.10.5 Merging intervals - https://leetcode.com/problems/merge-intervals/
+#### 17.10.6 Compute the union of intervals - https://leetcode.com/problems/merge-intervals/ (Similar, union of intervals)
+#### 17.10.7 Partitioning and sorting an array with many repeated entries - https://leetcode.com/problems/sort-colors/ (Similar)
+#### 17.10.8 Team photo day—1 - No direct LeetCode equivalent found.
+#### 17.10.9 Implement a fast sorting algorithm for lists - https://leetcode.com/problems/sort-list/ (Merge Sort for Linked List)
+#### 17.10.10 Compute a salary threshold - No direct LeetCode equivalent found.
+
+### 17.11 Binary Search Trees
+#### 17.11.1 Test if a binary tree satisfies the BST property - https://leetcode.com/problems/validate-binary-search-tree/
+#### 17.11.2 Find the first key greater than a given value in a BST - https://leetcode.com/problems/inorder-successor-in-bst/ (Similar)
+#### 17.11.3 Find the k largest elements in a BST - https://leetcode.com/problems/kth-largest-element-in-a-bst/
+#### 17.11.4 Compute the LCA in a BST - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+#### 17.11.5 Reconstruct a BST from traversal data - https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/ (Similar)
+#### 17.11.6 Find the closest entries in three sorted arrays - https://leetcode.com/problems/find-k-pairs-with-smallest-sums/ (Similar, but for 3 arrays)
+#### 17.11.7 Enumerate numbers of the form a + b √2 - No direct LeetCode equivalent found.
+#### 17.11.8 The most visited pages problem - https://leetcode.com/problems/lfu-cache/ (Similar, but for pages)
+#### 17.11.9 Build a minimum height BST from a sorted array - https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+#### 17.11.10 Insertion and deletion in a BST - https://leetcode.com/problems/delete-node-in-a-bst/
+#### 17.11.11 Test if three BST nodes are totally ordered - No direct LeetCode equivalent found.
+#### 17.11.12 The range lookup problem - https://leetcode.com/problems/range-sum-of-bst/ (Similar)
+#### 17.11.13 Add credits - No direct LeetCode equivalent found.
+
+### 17.12 Recursion
+#### 17.12.1 The Towers of Hanoi problem - No direct LeetCode equivalent found.
+#### 17.12.2 Generate all nonattacking placements of n-Queens - https://leetcode.com/problems/n-queens/
+#### 17.12.3 Generate permutations - https://leetcode.com/problems/permutations/
+#### 17.12.4 Generate the power set - https://leetcode.com/problems/subsets/
+#### 17.12.5 Generate all subsets of size k - https://leetcode.com/problems/combinations/ (Similar)
+#### 17.12.6 Generate strings of matched parens - https://leetcode.com/problems/generate-parentheses/
+#### 17.12.7 Generate palindromic decompositions - https://leetcode.com/problems/palindrome-partitioning/
+#### 17.12.8 Generate binary trees - https://leetcode.com/problems/unique-binary-search-trees-ii/ (Similar)
+#### 17.12.9 Implement a Sudoku solver - https://leetcode.com/problems/sudoku-solver/
+#### 17.12.10 Compute a Gray code - https://leetcode.com/problems/gray-code/
+#### 17.12.11 Compute the diameter of a tree - https://leetcode.com/problems/diameter-of-binary-tree/ (Similar)
+
+#### 17.2.1 The Dutch national flag problem - https://leetcode.com/problems/sort-colors/ (Similar)
+#### 17.2.2 Increment an arbitrary-precision integer - https://leetcode.com/problems/plus-one/
+#### 17.2.3 Multiply two arbitrary-precision integers - https://leetcode.com/problems/multiply-strings/
+#### 17.2.4 Advancing through an array - https://leetcode.com/problems/jump-game/ (Similar)
+#### 17.2.5 Delete duplicates from a sorted array - https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+#### 17.2.6 Buy and sell a stock once - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+#### 17.2.7 Buy and sell a stock twice - https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+#### 17.2.8 Enumerate all primes to n - https://leetcode.com/problems/count-primes/ (Similar)
+#### 17.2.9 Permute the elements of an array - https://leetcode.com/problems/next-permutation/ (Similar, general permutation)
+#### 17.2.10 Compute the next permutation - https://leetcode.com/problems/next-permutation/
+#### 17.2.11 Sample offline data - https://leetcode.com/problems/shuffle-an-array/ (Similar)
+#### 17.2.12 Sample online data - https://leetcode.com/problems/linked-list-random-node/ (Similar, reservoir sampling)
+#### 17.2.13 Compute a random permutation - https://leetcode.com/problems/shuffle-an-array/ (Similar)
+#### 17.2.14 Compute a random subset - https://leetcode.com/problems/random-pick-index/ (Similar)
+#### 17.2.15 Generate nonuniform random numbers - https://leetcode.com/problems/random-pick-with-weight/ (Similar)
+#### 17.2.16 The Sudoku checker problem - https://leetcode.com/problems/valid-sudoku/
+#### 17.2.17 Compute the spiral ordering of a 2D array - https://leetcode.com/problems/spiral-matrix/
+#### 17.2.18 Rotate a 2D array - https://leetcode.com/problems/rotate-image/
+#### 17.2.19 Compute rows in Pascal's Triangle - https://leetcode.com/problems/pascals-triangle/
+
+---
+
 ## Total: 189 Problems
 **Difficulty Distribution:**
 - Easy: 25 problems (13%)
