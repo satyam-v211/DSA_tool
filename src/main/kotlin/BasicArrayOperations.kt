@@ -49,13 +49,45 @@ class BasicArrayOperations {
         for (s in str) {
             freqArr[s - 'a'] += 1
         }
-        val key = StringBuilder()
-        for (f in freqArr) {
-            key.append("$f#")
-        }
+        val key = freqArrToKey(freqArr)
         for (i in freqArr.indices) {
             freqArr[i] = 0
         }
         return key.toString()
+    }
+
+    private fun freqArrToKey(freqArr: IntArray): StringBuilder {
+        val key = StringBuilder()
+        for (f in freqArr) {
+            key.append("$f#")
+        }
+        return key
+    }
+
+    fun findAnagrams(s: String, p: String): List<Int> {
+        if (s.length < p.length) return emptyList()
+        val freqArrPKey = freqArrAsKey(p, IntArray(26))
+        var windowS = 0
+        var windowE = p.length - 1
+        val sb = StringBuilder()
+        for (i in 0..windowE) {
+            sb.append(s[i])
+        }
+        val freqArr = IntArray(26)
+        freqArrAsKey(sb.toString(), freqArr)
+        val retValue = mutableListOf<Int>()
+        while (windowE < s.length) {
+            val currFreqKey = freqArrToKey(freqArr).toString()
+            if (currFreqKey == freqArrPKey) {
+                retValue.add(windowS)
+            }
+            freqArr[s[windowS] - 'a']--
+            windowS++
+            windowE++
+            if(windowE<s.length){
+                freqArr[s[windowE] - 'a']++
+            }
+        }
+        return retValue
     }
 }
