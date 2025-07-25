@@ -47,10 +47,37 @@ class TwoPointers {
             if (nums[rI] == nums[rI + 1]) {
                 rI++
             } else {
-                nums[wI] = nums[rI+1]
+                nums[wI] = nums[rI + 1]
                 wI++
             }
         }
         return wI + 1
+    }
+
+    fun threeSum(nums: IntArray): List<List<Int>> {
+        nums.sort()
+        print(nums.contentToString())
+        val retList = mutableListOf<List<Int>>()
+        for (i in nums.indices) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue
+            var j = i + 1
+            if (nums[i] == nums[j]) continue
+            var k = nums.size - 1
+            while (j < k) {
+                val sum = nums[i] + nums[j] + nums[k]
+                if (sum == 0) {
+                    retList.add(listOf(nums[i], nums[j], nums[k]))
+                    j++
+                    while(j<k && nums[j]==nums[j+1]){
+                        j++
+                    }
+                } else if (sum > 0) {
+                    k--
+                } else {
+                    j++
+                }
+            }
+        }
+        return retList
     }
 }
