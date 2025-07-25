@@ -39,4 +39,18 @@ class TwoPointers {
             binarySearch(numbers, mid + 1, end, target)
         }
     }
+
+    fun removeDuplicates(nums: IntArray): Int {
+        var rI = 0
+        var wI = 1
+        while (rI < nums.size - 1) {
+            if (nums[rI] == nums[rI + 1]) {
+                rI++
+            } else {
+                nums[wI] = nums[rI+1]
+                wI++
+            }
+        }
+        return wI + 1
+    }
 }
