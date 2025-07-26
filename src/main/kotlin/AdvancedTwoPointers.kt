@@ -43,8 +43,8 @@ class AdvancedTwoPointers {
         val retVal = mutableListOf<List<Int>>()
         for (i in nums.indices) {
             if (i > 0 && nums[i] == nums[i - 1]) continue
-            for (j in i+1 until nums.size - 2) {
-                if (j > i+1 && nums[j] == nums[j - 1]) continue
+            for (j in i + 1 until nums.size - 2) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) continue
                 var k = j + 1
                 var l = nums.size - 1
                 while (k < l) {
@@ -64,5 +64,34 @@ class AdvancedTwoPointers {
             }
         }
         return retVal
+    }
+
+    class ListNode(var `val`: Int) {
+        var next: ListNode? = null
+    }
+
+    fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
+        var size = 0
+        var temp = head
+        while (temp != null) {
+            size++
+            temp = temp.next
+        }
+        temp = head
+        val nodeToRem = size - n
+        if (nodeToRem == 0) {
+            return head?.next
+        }
+        var i = 0
+        while (temp != null) {
+            if (i + 1 == nodeToRem) {
+                temp.next = temp.next?.next
+                return head
+            } else {
+                i++
+                temp = temp.next
+            }
+        }
+        return head
     }
 }
