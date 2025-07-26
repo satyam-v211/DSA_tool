@@ -68,7 +68,7 @@ class TwoPointers {
                 if (sum == 0) {
                     retList.add(listOf(nums[i], nums[j], nums[k]))
                     j++
-                    while(j<k && nums[j]==nums[j+1]){
+                    while (j < k && nums[j] == nums[j + 1]) {
                         j++
                     }
                 } else if (sum > 0) {
@@ -79,5 +79,34 @@ class TwoPointers {
             }
         }
         return retList
+    }
+
+    class ListNode(var `val`: Int) {
+        var next: ListNode? = null
+    }
+
+    fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
+        var size = 0
+        var temp = head
+        while (temp != null) {
+            size++
+            temp = temp.next
+        }
+        temp = head
+        val nodeToRem = size - n
+        if (nodeToRem == 0) {
+            return head?.next
+        }
+        var i = 0
+        while (temp != null) {
+            if (i + 1 == nodeToRem) {
+                temp.next = temp.next?.next
+                return head
+            } else {
+                i++
+                temp = temp.next
+            }
+        }
+        return head
     }
 }
