@@ -1,3 +1,4 @@
+import java.util.PriorityQueue
 import kotlin.math.max
 
 class SlidingWindow {
@@ -87,6 +88,32 @@ class SlidingWindow {
                 maxLen = maxOf(maxLen, end - start + 1)
             }
             return maxLen
+        }
+
+        fun characterReplacement(s: String, k: Int): Int {
+            var windowStart = 0
+            var maxLength = 0
+            var maxRepeatCharCount = 0
+            val charFrequency = mutableMapOf<Char, Int>()
+
+            for (windowEnd in s.indices) {
+                val rightChar = s[windowEnd]
+                charFrequency[rightChar] = charFrequency.getOrDefault(rightChar, 0) + 1
+                maxRepeatCharCount = maxOf(maxRepeatCharCount, charFrequency[rightChar]!!)
+
+                // The number of characters to replace is the window size minus the count of the most frequent character.
+                // If this number exceeds k, we must shrink the window.
+                if ((windowEnd - windowStart + 1) - maxRepeatCharCount > k) {
+                    val leftChar = s[windowStart]
+                    charFrequency[leftChar] = charFrequency[leftChar]!! - 1
+                    windowStart++
+                }
+
+                // The result is the size of the largest valid window we have found.
+                maxLength = maxOf(maxLength, windowEnd - windowStart + 1)
+            }
+
+            return maxLength
         }
     }
 }
