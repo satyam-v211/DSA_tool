@@ -1,5 +1,6 @@
 import java.util.PriorityQueue
 import kotlin.math.max
+import kotlin.math.min
 
 class SlidingWindow {
     class FixedWindow {
@@ -115,5 +116,42 @@ class SlidingWindow {
 
             return maxLength
         }
+
+        fun minWindow(s: String, t: String): String {
+            if (s.length < t.length) return ""
+            val freqMapT = mutableMapOf<Char, Int>()
+            for (c in t) {
+                freqMapT[c] = freqMapT.getOrDefault(c, 0) + 1
+            }
+            var windowS = 0
+            var windowE = 0
+            var validCount = 0
+            var minLength = Integer.MAX_VALUE
+            var start = 0
+            val freqMapWindow = mutableMapOf<Char, Int>()
+            while (windowE < s.length) {
+                val c = s[windowE]
+                freqMapWindow[c] = freqMapWindow.getOrDefault(c, 0) + 1
+                if (freqMapT.contains(c) && freqMapT[c] == freqMapWindow[c]) {
+                    validCount++
+                }
+                while (validCount == freqMapT.size) {
+                    if (windowE - windowS + 1 < minLength) {
+                        minLength = windowE - windowS + 1
+                        start = windowS
+                    }
+                    val leftChar = s[windowS]
+                    freqMapWindow[leftChar] = freqMapWindow[leftChar]!! - 1
+                    if (freqMapT.contains(leftChar) && freqMapWindow[leftChar]!! < freqMapT[leftChar]!!) {
+                        validCount--
+                    }
+                    windowS++
+                }
+                windowE++
+            }
+            return if (minLength == Integer.MAX_VALUE) "" else s.substring(start, start + minLength)
+        }
+
+
     }
 }
