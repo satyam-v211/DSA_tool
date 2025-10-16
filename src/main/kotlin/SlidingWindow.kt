@@ -1,3 +1,4 @@
+import java.util.Collections
 import java.util.PriorityQueue
 import kotlin.math.max
 import kotlin.math.min
@@ -151,7 +152,28 @@ class SlidingWindow {
             }
             return if (minLength == Integer.MAX_VALUE) "" else s.substring(start, start + minLength)
         }
+    }
 
-
+    class AdvancedSlidingWindow {
+        fun maxSlidingWindow(nums: IntArray, k: Int): IntArray {
+            val retArray = IntArray(nums.size-k+1)
+            var windowS = 0
+            var windowE = 0
+            val pq = PriorityQueue(Collections.reverseOrder<Int>())
+            var currI = 0
+            while (windowE < nums.size) {
+                val currSize = windowE - windowS
+                if (currSize == k) {
+                    retArray[currI++] = pq.peek()
+                    pq.remove(nums[windowS])
+                    windowS++
+                }
+                pq.add(nums[windowE++])
+            }
+            if (pq.isNotEmpty()) {
+                retArray[currI] = pq.peek()
+            }
+            return retArray
+        }
     }
 }
